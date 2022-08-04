@@ -742,7 +742,7 @@ webui:
     podAnnotations: {}
 
     # -- Enable the PVC for the redis pod
-    storageEnabled: true
+    storageEnabled: false
     # -- Size of the PVC for the redis pod
     storageSize: "1Gi"
     # -- Storage class of the PVC for the redis pod
