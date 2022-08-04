@@ -21,4 +21,4 @@ dependencies:
   - name: falcosidekick
     version: "0.5.4"
     condition: falcosidekick.enabled
-    repository: https://falcosecurity.github.io/charts
+    repository: https://github.com/kodekloudhub/charts
