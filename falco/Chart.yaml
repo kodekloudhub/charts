@@ -19,6 +19,6 @@ maintainers:
     email: cncf-falco-dev@lists.cncf.io
 dependencies:
   - name: falcosidekick
-    version: "0.5.4"
+    version: "1"
     condition: falcosidekick.enabled
-    repository: https://github.com/kodekloudhub/charts
+    repository: "file://../falcosidekick/"
