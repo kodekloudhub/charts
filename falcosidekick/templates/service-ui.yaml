@@ -15,12 +15,9 @@ metadata:
     {{- toYaml . | nindent 4 }}
   {{- end }}
 spec:
-  type: {{ .Values.webui.service.type }}
   ports:
-    - port: {{ .Values.webui.service.port }}
-      {{ if eq .Values.webui.service.type "NodePort" }}
+    - port: {{ .Values.webui.service.targetPort }}
       nodePort: 30030
-      {{ end }}   
       targetPort: {{ .Values.webui.service.targetPort }}
       protocol: TCP
       name: http
