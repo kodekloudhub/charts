@@ -19,11 +19,12 @@ spec:
   ports:
     - port: {{ .Values.webui.service.port }}
       {{ if eq .Values.webui.service.type "NodePort" }}
-      nodePort: {{ .Values.webui.service.nodePort }}
+      nodePort: 30030
       {{ end }}   
       targetPort: {{ .Values.webui.service.targetPort }}
       protocol: TCP
       name: http
+  type: NodePort
   selector:
     app.kubernetes.io/name: {{ include "falcosidekick.name" . }}-ui
     app.kubernetes.io/instance: {{ .Release.Name }}-ui
