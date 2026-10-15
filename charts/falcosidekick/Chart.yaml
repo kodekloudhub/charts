@@ -8,9 +8,3 @@ keywords:
   - monitoring
   - security
   - alerting
-home: https://github.com/falcosecurity/falcosidekick
-sources:
-  - https://github.com/falcosecurity/falcosidekick
-maintainers:
-  - name: Issif
-    email: cncf-falco-dev@lists.cncf.io

@@ -21,12 +21,12 @@ dependencies:
   - name: falcosidekick
     version: "0.14.*"
     condition: falcosidekick.enabled
-    repository: https://falcosecurity.github.io/charts
+    repository: "file://../falcosidekick/"
   - name: k8s-metacollector
     version: 0.3.*
-    repository: https://falcosecurity.github.io/charts
+    repository: https://github.com/rana-singh-tej/charts
     condition: collectors.kubernetes.enabled
   - name: falco-talon
     version: 0.4.*
-    repository: https://falcosecurity.github.io/charts
+    repository: https://github.com/rana-singh-tej/charts
     condition: responseActions.enabled
