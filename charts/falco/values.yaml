@@ -1613,3 +1613,8 @@ falco:
     # -- Set how many bytes are collected of each I/O buffer for 'syscall' events.
     # Use this option with caution since it can have a strong performance impact.
     snaplen: 80
+falcosidekick:
+  enabled: true
+  webui:
+    enabled: true
+    disableauth: true

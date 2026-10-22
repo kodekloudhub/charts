@@ -1261,9 +1261,9 @@ webui:
   # -- TTL for keys, the syntax in X<unit>, with <unit>: s, m, d, w (0 for no ttl)
   ttl: 0
   # -- User in format <login>:<password>
-  user: "admin:admin"
+  # user: "admin:admin"
   # -- Disable the basic auth
-  disableauth: false
+  disableauth: true
   # -- Existing secret with configuration
   existingSecret: ""
   # -- Allow CORS
@@ -1436,7 +1436,7 @@ webui:
     podAnnotations: {}
 
     # -- Enable the PVC for the redis pod
-    storageEnabled: true
+    storageEnabled: false
     # -- Size of the PVC for the redis pod
     storageSize: "1Gi"
     # -- Storage class of the PVC for the redis pod

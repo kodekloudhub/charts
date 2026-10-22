@@ -14,19 +14,16 @@ home: https://falco.org
 icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/falco/horizontal/color/falco-horizontal-color.svg
 sources:
   - https://github.com/falcosecurity/falco
-maintainers:
-  - name: The Falco Authors
-    email: cncf-falco-dev@lists.cncf.io
 dependencies:
   - name: falcosidekick
     version: "0.14.*"
     condition: falcosidekick.enabled
-    repository: https://falcosecurity.github.io/charts
+    repository: "file://../falcosidekick/"
   - name: k8s-metacollector
     version: 0.3.*
-    repository: https://falcosecurity.github.io/charts
+    repository: "file://../k8s-metacollector/"
     condition: collectors.kubernetes.enabled
   - name: falco-talon
-    version: 0.4.*
-    repository: https://falcosecurity.github.io/charts
+    version: 0.5.*
+    repository: "file://../falco-talon/"
     condition: responseActions.enabled
